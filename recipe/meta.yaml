@@ -1,5 +1,5 @@
 {% set name = "sphinx-design" %}
-{% set version = "0.0.13" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/executablebooks/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 65972ef31a470f39acb37d7559ae73598cfec0d108871ed7b1ebe0b685d891e5
+  sha256: 0da3a83da716d91f6c926ae1b98c32e25df1b1429668e903757450249cf9367c
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
     - python >=3.6
     - pip
     - sphinx >=3,<5
+    - flit-core
   run:
     - python >=3.6
     - sphinx >=3,<5
@@ -40,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: A sphinx extension for designing beautiful, screen-size responsive web components. 
+  summary: A sphinx extension for designing beautiful, screen-size responsive web components.
   home: https://github.com/executablebooks/sphinx-design
   doc_url: https://sphinx-design.readthedocs.io
 

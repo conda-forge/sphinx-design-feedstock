@@ -19,11 +19,11 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - sphinx >=3,<5
+    - sphinx >=4,<6
     - flit-core
   run:
     - python >=3.6
-    - sphinx >=3,<5
+    - sphinx >=4,<6
 
 test:
   requires:

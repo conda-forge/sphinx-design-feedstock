@@ -1,5 +1,5 @@
 {% set name = "sphinx-design" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/executablebooks/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 901f156d7a799ab39118d3daba5fbe606844bbc2b4dda852855b508ad72eb6ad
+  sha256: b54482a196db98f5fb803105b143104be0269126d7cab9aeb9fc3d1adbfedcc4
 
 build:
-  number: 1
+  number: 0
   script:
     - {{ PYTHON }} -m pip install . -vv
   noarch: python

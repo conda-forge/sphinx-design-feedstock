@@ -1,11 +1,11 @@
-About sphinx-design
-===================
+About sphinx-design-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-design-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/executablebooks/sphinx-design
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-design-feedstock/blob/main/LICENSE.txt)
 
 Summary: A sphinx extension for designing beautiful, screen-size responsive web components.
 

@@ -10,20 +10,20 @@ source:
   sha256: ba107f2ddf5843f37c257c7a8d003f94615c939062abb83ac5cab017b9a0367e
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
-    - sphinx >=4,<6
+    - sphinx >=4,<7
     - flit-core
   run:
-    - python >=3.6
-    - sphinx >=4,<6
+    - python >=3.7
+    - sphinx >=4,<7
 
 test:
   requires:

@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@awvwgk](https://github.com/awvwgk/)
+* [@dopplershift](https://github.com/dopplershift/)
 

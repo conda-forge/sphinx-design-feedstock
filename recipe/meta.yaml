@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - sphinx >=5,<8
     - flit-core
   run:
-    - python >=3.8
+    - python >=3.9
     - sphinx >=5,<8
 
 test:
@@ -30,6 +30,7 @@ test:
     - myst-parser
     - pytest
     - pytest-regressions
+    - defusedxml
   source_files:
     - tests/
   imports:

@@ -1,5 +1,5 @@
 {% set name = "sphinx-design" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/executablebooks/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c2d9e45ffafc930cb552296238da300d6d0623c0816cfbabdc14534fd16e9ca3
+  sha256: 36306b6b0dd24ab877bb5259edb3e860fc907d5b078cd7db9b3a5907427c59e3
 
 build:
   number: 0
@@ -20,20 +20,26 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - flit-core >=3.4,<4
+    - flit-core >=3.4,<5
   run:
     - python >={{ python_min }}
-    - sphinx >=7,<10
+    - sphinx >=7.2,<10
 
 test:
   requires:
     - myst-parser >=4,<6
-    - pytest >=8.3,<8.4
+    - pytest >=8.3,<10.0
+    - pytest-cov
     - pytest-regressions
     - defusedxml
+    - tinycss2
+    - rcssmin
     - python {{ python_min }}
   source_files:
     - tests/
+    - tools/
+    - sphinx_design/static/
+    - style/
   imports:
     - sphinx_design
   commands:

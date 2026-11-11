@@ -37,6 +37,7 @@ test:
     - python {{ python_min }}
   source_files:
     - tests/
+    - tools/
   imports:
     - sphinx_design
   commands:
